@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<ul>
+   <% for(var i=0;i<results.length;i++){%>
+    <li onclick="handleClickFunc(this)" style="cursor: pointer" id="<%= results[i].id %>" class="<%= results[i].kind %>"><%= results[i].title %></li>
+    <%}%>
+</ul>
+<script type="text/javascript">
+function handleClickFunc (e) {
+  let id = e.getAttribute('id')
+  window.location.href = '/blog/' + id
+  // let xhr = new XMLHttpRequest()
+  // xhr.onreadystatechange = function () {
+  //   if (xhr.readyState === 4 && xhr.status === 200) {
+  //     document.write(JSON.parse(xhr.responseText))
+  //   }
+  // }
+  // xhr.open('get','/blog/' + id)
+  // xhr.send(null)
+}
+//     $("li").click(function(){
+//         $.get("/blog/"+$(this).attr('id'), function(result){
+//             console.log("done");
+//         });
+//     });
+</script>
+</body>
+</html>

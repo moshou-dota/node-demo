@@ -1,0 +1,33 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "node test project",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js",
+    "test-steam": "node steamApp.js",
+    "test-worker": "node masterWorkerApp.js",
+    "test-cluster": "node clusterWorker.js",
+    "test-db": "node db.js",
+    "test-blog": "node blog.js"
+  },
+  "author": "wupeng",
+  "license": "ISC",
+  "devDependencies": {
+    "formidable": "^1.2.1",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.2.0",
+    "node.js": "0.0.0",
+    "ws": "^7.0.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.5",
+    "ejs": "^2.6.1",
+    "koa-session": "^5.12.0",
+    "mongoose": "^5.5.11",
+    "redis": "^2.8.0"
+  }
+}
